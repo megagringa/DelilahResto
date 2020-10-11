@@ -19,7 +19,7 @@ Trabajo número 3 del curso de Desarrollo Web Full Stack de Acámica.
 
   Puedes encontrar más información en la página oficial de [NPM](https://npmjs.org/).
 
-Si la instalación es exitosa los siguientes comandos pueden ser ejecutados.
+Si la instalación es exitosa los siguientes comandos tipeados pueden ser ejecutados.
 
     $ node --version
     v8.11.3
