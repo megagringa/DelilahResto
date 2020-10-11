@@ -2,9 +2,9 @@
 Trabajo número 3 del curso de Desarrollo Web Full Stack de Acámica. 
 
 ## Lenguajes y tecnologias 
-.Node.js 
-.Postman
-.XAMPP
+-Node.js 
+-Postman
+-XAMPP
 
 - #### Descarga de Node.js
   Pagina oficial de[Node.js](https://nodejs.org/).
