@@ -36,37 +36,14 @@ Dirígete a [XAMPP](https://www.apachefriends.org/es/index.html) y sigue las ins
 ```
 https://github.com/megagringa/DelilahResto.git
 ```
+- Ejecutar XAMPP u otro programa de MySQL y Apache.
+- Importar la base de datos "database.sql" que se está dentro de la carpeta "database" en la raiz del proyecto, este archivo contiene la creacion de tablas en mysql y la insercion de datos de prueba para la verificacion del correcto funcionamiento del API
+- Abrir una consola en la carpeta donde se clono el repositorio
+- instalar las dependecias del proyecto con el comando `npm install`
+- Para configurar los datos de acceso a la base de datos abrir el archivo config.js dentro de /src/config y verificar que los datos de acceso a la base de datos sean correctos 
+- Iniciar el proyecto con el comando `npm run start` para iniciar el servidor o con el comando `npm run dev` para iniciarlo en modo desarrollo
+- Si no ocurre ningun error inesperado debe aparecer en la consola el mensaje "server on port 3000"
+- El servidor se encuentra corriendo en la direccion: http://localhost:3000
 
-## Ejecuta
-``npm install`` para instalar las dependencias.
-
-### Tablas MySQL
-En el archivo ``create_tables.sql`` encontrarás las estructuras de las tablas para la utilización de la API, la creación del administrador en donde el usuario podrá crear, modificar, borrar productos, usuarios y pedidos, y visualizar la información sobre los usuarios y los pedidos realizados.
-
-### Inicio del servidor
-- Ejecuta ```node server.js``` en tu consola
-- Escribe la dirección en tu navegador ```http://localhost:3000```
-- Mensaje * Servidor iniciado *
-- Dirígete a Xampp, una vez en el panel de inicio, en la seccion Modules, haz click en los botones ``` start``` de la   fila correspondiente a Apache y MySQL.
-- Puedes empezar con las pruebas en Postman.
-
-### Endpoints
-Encontrarás los posibles endpoints en el documento ``spec.yaml``. Puedes abrirlo en el [editor de Swagger](https://editor.swagger.io/).
-
-- Para ingresar un pedido
-
-```
-{
-    "productos" : [{
-        "id" : "1"
-        "nombre" : "ejemplo1",
-        "cantidad" : "5"
-    },{
-        "id" : "2"
-        "nombre" : "ejemplo2",
-        "cantidad" : "5"
-    }],
-    "mododepago" : "Efectivo/tarjeta"
-}
-
-```
+- En la carpeta "postman_collection" se encuentra el archivo de exportacion de la coleccion de peticiones de postman con las pruebas de las peticiones que se pueden realizar al API, este archivo puede ser importado en postman para verificar el correcto funcionamiento de la misma.
+- En la raiz del proyecto se encuentra el archivo spec.yml en donde se encuentra la documentacion del API en Open API.
